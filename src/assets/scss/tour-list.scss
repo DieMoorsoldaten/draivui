@@ -1,0 +1,49 @@
+.tour-list {
+    & a {
+        width: 242px;
+        display: block;
+        padding: 18px 40px;
+        font-family: 'CnBd', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        background: #FDEC34;
+        margin: 0 40px 0 20px;
+        position: relative;
+        transition: $transition;
+        color: #000;
+        text-align: center;
+
+        @media ($max) {
+            width: calc(242 * 100vw / 768);
+            margin: 0 calc(40 * 100vw / 768) 0 calc(20 * 100vw / 768);
+            padding: calc(18 * 100vw / 768) calc(40 * 100vw / 768);
+            font-size: calc(20 / 16 * 1rem);
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(35 / 16 * 1rem);
+            width: calc(250 * 100vw / 375);
+            padding: calc(18 * 100vw / 375) calc(20 * 100vw / 375);
+            left: calc(25vw - ( 125 * 100vw / 375));
+            top: calc( 110 * 100vw / 375);
+        }
+
+        @media (max-width: 375px) {
+            font-size: calc(35 / 16 * 1rem);
+            width: calc(300 * 100vw / 375);
+            padding: calc(18 * 100vw / 375) calc(20 * 100vw / 375);
+            left: calc(25vw - ( 150 * 100vw / 375));
+            top: calc( 110 * 100vw / 375);
+        }
+
+        &:hover {
+            background: $light;
+        }
+    }
+
+    @media ($max) {
+        position: absolute;
+        top: calc(102 * 100vw / 768);
+        left: calc(25% - calc(121 * 100vw / 768));
+    }
+}

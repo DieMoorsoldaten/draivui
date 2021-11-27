@@ -1,0 +1,30 @@
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 160px;
+    position: relative;
+
+    @media ($max) {
+        padding: 0 0 calc(165 * 100vw / 768);
+        height: calc(240 * 100vw / 768);
+    }
+
+    @media ($mobile) {
+        padding: 0 0 calc( 75 * 100vw / 375);
+        height: calc(150 * 100vw / 375);
+    }
+
+    & ul {
+        display: flex;
+        align-items: center;
+    }
+
+    @media ($mobile) {
+        & ul {
+            width: calc(122 * 100vw / 375);
+            top: calc(410 * 100vw / 375);
+            margin: 0 auto;
+        }
+    }
+}

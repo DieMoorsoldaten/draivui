@@ -1,0 +1,7 @@
+.main {
+    padding: 64px 0 0;
+
+    @media ($max) {
+        padding: 0;
+    }
+}

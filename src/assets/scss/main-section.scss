@@ -1,0 +1,33 @@
+.main-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    @media ($max) {
+        text-align: center;
+        height: calc(707 * 100vw / 768);
+        padding: 0 15px;
+    }
+
+    & h3 {
+        font-family: 'ExpBl', sans-serif;
+        font-size: 54px;
+        padding-bottom: 32px;
+
+        @media ($max) {
+            font-size: calc(45 / 16 * 1rem);
+        }
+    }
+
+    & p {
+        font-size: 20px;
+        line-height: 25px;
+        font-family: 'CnRg';
+        padding: 0 30px;
+        text-align: justify;
+    }
+
+}

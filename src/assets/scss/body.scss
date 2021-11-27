@@ -1,0 +1,116 @@
+body{
+    counter-reset: section;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+
+    @media ($max) {
+        width: 100%;
+    }
+}
+
+.relative{
+    position: relative;
+}
+
+.z-index-5{
+    z-index: 5;
+}
+
+.z-index-10{
+    z-index: 10;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-xl-left{
+    text-align: left;
+}
+
+.text-xl-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+.justify-flex-end{
+    justify-content: end;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+@media screen and ($max) {
+    .d-mobile-none{
+        display: none;
+    }
+}
+
+@media screen and ($min) {
+    .d-xl-none{
+        display: none;
+    }
+}
+
+@media screen and ($max) {
+    .mx-mobile-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mr-mobile-auto{
+        margin-right: auto;
+    }
+}
+
+.z-index--1 {
+    z-index: -1;
+}
+
+html {
+    @media screen and ($max) {
+        font-size: calc(16 * 100vw / 768);
+    }
+}

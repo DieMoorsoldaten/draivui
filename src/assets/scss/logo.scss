@@ -1,0 +1,15 @@
+.logo {
+  width: 460px;
+  display: inline-block;
+
+  @media ($max) {
+    width: calc(157 * 100vw / 768);
+  }
+
+  @media ($mobile) {
+    width: calc(210 * 100vw / 375);
+    position: absolute;
+    left: calc( 50vw - (105 * 100vw / 375 ) );
+    top: 0;
+  }
+}

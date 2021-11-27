@@ -1,0 +1,119 @@
+.header {
+    position: relative;
+    min-height: 1080px;
+    overflow: hidden;
+
+    @media ($max) {
+        height: calc(1045 * 100vw / 768);
+        overflow: hidden;
+    }
+
+    @media ($mobile) {
+        min-height: calc(1183 * 100vw / 375);
+        overflow: hidden;
+    }
+
+    & figure {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+
+        @media ($min) {
+            max-height: 1080px;
+        }
+
+        @media ($max) {
+            height: 100%;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: none;
+        min-height: 1080px;
+        object-position: center top;
+        z-index: -1;
+
+        @media ($max) {
+            display: none;
+        }
+    }
+
+    &__img {
+        @media (min-width: 1921px) {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__img-mobile {
+        @media ($max) {
+            width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (min-width: 1200px) {
+            display: none;
+        }
+
+        @media ($mobile) {
+            width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            
+            &__img-tablet {
+                display: none;
+            }
+        }
+    }
+
+    @media ($mobile) {
+        &__img-tablet {
+            display: none;
+        }
+    }
+
+    &__container {
+        padding: 32px 15px;
+        height: 100%;
+        z-index: 20;
+
+        @media ($max) {
+            padding: calc(32 * 100vw / 768) calc(15 * 100vw / 768);
+        }
+
+        @media ($mobile) {
+            padding: calc(45 * 100vw / 375) calc(15 * 100vw / 375);
+        }
+
+        & ul {
+            min-width: 50%;
+            justify-content: end;
+
+            @media ($max) {
+                width: 70%;
+            }
+        }
+    }
+
+    &__text {
+        font-family: 'ExtBd', sans-serif;
+        font-size: 20px;
+        position: absolute;
+        color: #fff;
+        transform: rotate(-24deg);
+        left: 500px;
+        top: 780px;
+
+        @media ($max) {
+            font-size: calc(20 / 16 * 1rem);
+            left: calc(465 * 100vw / 768);
+            top: calc(785 * 100vw / 768);
+        }
+    }
+}

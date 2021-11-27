@@ -1,0 +1,23 @@
+.road-tablet {
+    position: absolute;
+    top: calc(-830 * 100vw / 768);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(327 * 100vw / 768);
+    object-position: center;
+    object-fit: none;
+
+    @media screen and ($min) {
+        display: none;
+    }
+
+    @media screen and ($mobile) {
+        display: none;
+    }
+
+    & svg {
+        width: 100%;
+    }
+}

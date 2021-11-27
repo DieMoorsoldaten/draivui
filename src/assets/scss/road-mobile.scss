@@ -1,0 +1,20 @@
+.road-mobile {
+    position: absolute;
+    top: calc(-830 * 100vw / 768);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(311 * 100vw / 768);
+    object-position: center;
+    object-fit: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+
+    & svg {
+        width: 100%;
+    }
+}

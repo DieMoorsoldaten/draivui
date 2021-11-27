@@ -1,0 +1,51 @@
+.soc-net-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 50px 0 0;
+
+    & a {
+        display: block;
+        height: 100%;
+    }
+
+    & path {
+        transition: $transition;
+        fill: $dark;
+    }
+
+    &:hover path {
+        fill: $yellow;
+    }
+
+    @media ($max) {
+        align-items: center;
+        width: calc(50 * 100vw / 768);
+        margin: 0 calc(40 * 100vw / 768) 0 0;
+        height: 100%;
+
+        & path {
+            fill: $light;
+        }
+
+        &:hover path {
+            fill: #fff;
+        }
+
+        &__f {
+            margin-left: auto;
+        }
+    }
+
+    @media ($mobile) {
+        width: calc( 40 * 100vw / 375);
+        & path {
+            fill: $dark;
+        }
+    }
+
+    @media ($mobile) {
+        &__f{
+            margin: 0 calc( 40 * 100vw / 375) 0 auto;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.main-image {
+  min-width: 50%;
+
+  @media ($max) {
+    text-align: right;
+  }
+
+  @media ($min) {
+    .main-inner &__castle2{
+      object-fit: cover;
+    }
+  }
+
+  & figure{
+    & img{
+      width: 100%;
+      object-fit: none;
+      height: auto;
+      position: relative;
+
+      @media ($max) {
+        object-fit: cover;
+        object-position: center;
+        height: calc(460 * 100vw / 768);
+      }
+    }
+  }
+
+  & a {
+    font-family: 'ExpLt', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 0 0;
+    color: rgba(0, 0, 0, 1);
+    transition: $transition;
+
+    &:hover{
+      color: rgba(0, 0, 0, .5);
+    }
+
+    @media ($max) {
+      font-size: calc(20 / 16 * 1rem);
+      line-height: calc(32 / 16 * 1rem);
+      margin: 0 calc(20 * 100vw / 768) 0 auto;
+      padding: calc(5 * 100vw / 768);
+    }
+  }
+}

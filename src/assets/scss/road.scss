@@ -1,0 +1,9 @@
+.road {
+    position: absolute;
+    top: -407px;
+    left: 0;
+
+    @media screen and ($max){
+        display: none;
+    }
+}
