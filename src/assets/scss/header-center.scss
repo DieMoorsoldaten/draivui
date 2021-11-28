@@ -24,7 +24,7 @@
         }
 
         @media ($mobile) {
-            font-size: calc(60 / 16 * 1rem);
+            margin: 0 0 calc(16 * 100vw / 375);
         }
 
     }
@@ -49,9 +49,9 @@
         }
 
         @media (max-width: 767px) {
-            font-size: calc(28 / 16 * 1rem);
-            line-height: calc(32 / 16 * 1rem);
-            max-width: 60%;
+            font-size: calc(14 / 16 * 1rem);
+            line-height: calc(17 / 16 * 1rem);
+            max-width: 85%;
         }
     }
 }

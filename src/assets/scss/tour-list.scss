@@ -21,17 +21,10 @@
         }
 
         @media (max-width: 767px) {
-            font-size: calc(35 / 16 * 1rem);
-            width: calc(250 * 100vw / 375);
-            padding: calc(18 * 100vw / 375) calc(20 * 100vw / 375);
-            left: calc(25vw - ( 125 * 100vw / 375));
-            top: calc( 110 * 100vw / 375);
-        }
-
-        @media (max-width: 375px) {
-            font-size: calc(35 / 16 * 1rem);
+            font-size: calc(20 / 16 * 1rem);
+            line-height: calc(25 / 16 * 1rem);
+            padding: calc(16 * 100vw / 375) calc(64 * 100vw / 375);
             width: calc(300 * 100vw / 375);
-            padding: calc(18 * 100vw / 375) calc(20 * 100vw / 375);
             left: calc(25vw - ( 150 * 100vw / 375));
             top: calc( 110 * 100vw / 375);
         }

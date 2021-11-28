@@ -5,21 +5,6 @@
   max-width: 90%;
   color: black;
 
-  & p + p {
-    font-size: 26px;
-    line-height: 100%;
-    margin: 20px 0 0;
-
-    @media ($max) {
-      font-size: calc(26 / 16 * 1rem);
-      margin: calc(20 * 100vw / 768) 0 0;
-    }
-
-    @media (max-width: 767px) {
-      font-size: calc(32 / 16 * 1rem);
-    }
-  }
-
   @media ($max) {
     font-size: calc(20 / 16 * 1rem);
     line-height: calc(25 / 16 * 1rem);
@@ -27,9 +12,9 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 767px) {
-    font-size: calc(26 / 16 * 1rem);
-    line-height: calc(32 / 16 * 1rem);
+  @media ($mobile) {
+    font-size: calc(16 / 16 * 1rem);
+    line-height: calc(20 / 16 * 1rem);
   }
 
   @media (max-width: 375px) {

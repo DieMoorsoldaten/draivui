@@ -2,6 +2,11 @@
     padding: 64px 0 0;
 
     @media ($max) {
-        padding: 0;
+        padding: calc(32 * 100vw / 768) calc(30 * 100vw / 768);
     }
+
+    @media ($mobile) {
+        padding: calc(64 * 100vw / 375) 0;
+    }
+
 }

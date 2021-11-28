@@ -5,11 +5,16 @@
     justify-content: center;
     position: relative;
     z-index: 10;
+    flex: 0 1 50%;
 
     @media ($max) {
         text-align: center;
-        height: calc(707 * 100vw / 768);
-        padding: 0 15px;
+        padding: 0 calc(15 * 100vw / 768);
+    }
+
+    @media ($mobile) {
+        height: calc(300 * 100vw / 375);
+        padding: 0 calc(15 * 100vw / 375);
     }
 
     & h3 {
@@ -18,8 +23,14 @@
         padding-bottom: 32px;
 
         @media ($max) {
-            font-size: calc(45 / 16 * 1rem);
+            font-size: calc(34 / 16 * 1rem);
+            padding-bottom: calc(32 * 100vw / 768);
         }
+
+        @media ($max) {
+            padding-bottom: calc(16 * 100vw / 375);
+        }
+
     }
 
     & p {
@@ -28,6 +39,11 @@
         font-family: 'CnRg';
         padding: 0 30px;
         text-align: justify;
+
+        @media ($max) {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: calc(20 / 16 * 1rem);
+        }
     }
 
 }

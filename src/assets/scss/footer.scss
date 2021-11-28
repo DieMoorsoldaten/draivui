@@ -2,15 +2,11 @@
     padding: 128px 0 256px;
 
     @media ($max) {
-        padding: calc(160 * 100vw / 768) calc(15 * 100vw / 768) calc(122 * 100vw / 768);
+        padding: calc(192 * 100vw / 768) calc(15 * 100vw / 768) calc(105 * 100vw / 768);
     }
 
     @media (max-width: 767px) {
-        padding: calc(160 * 100vw / 768) calc(15 * 100vw / 768) calc(90 * 100vw / 768);
-    }
-
-    @media (max-width: 400px) {
-        padding: calc(160 * 100vw / 768) calc(15 * 100vw / 768) calc(55 * 100vw / 768);
+        padding: calc(64 * 100vw / 375) calc(15 * 100vw / 375) calc(85 * 100vw / 375);
     }
 
     & h2{
@@ -23,6 +19,12 @@
             font-size: calc(28 / 16 * 1rem);
             line-height: calc(35 / 16 * 1rem);
             margin: 0 0 calc(32 * 100vw / 768);
+        }
+
+        @media ($mobile) {
+            font-size: calc(25 / 16 * 1rem);
+            line-height: calc(32 / 16 * 1rem);
+            margin: 0 0 calc(101 * 100vw / 375);
         }
 
         & span{
@@ -38,11 +40,19 @@
             margin: 0 0 calc(133 * 100vw / 768);
         }
 
+        @media ($mobile) {
+            margin: 0 0 calc(225 * 100vw / 375);
+        }
+
         & li{
             margin: 0 30px;
 
             @media ($max) {
                 margin: 0 calc(25 * 100vw / 768);
+            }
+
+            @media ($mobile) {
+                margin: 0 calc(35 * 100vw / 375);
             }
         }
 
@@ -75,11 +85,20 @@
                     height: auto;
                 }
             }
+
+            @media ($mobile) {
+                width: calc(50 * 100vw / 375);
+                height: calc(50 * 100vw / 375);
+            }
         }
     }
 
     .footer-bottom{
         align-items: center;
+
+        @media ($mobile) {
+            display: block;
+        }
 
         & li {
             flex: 0 1 33%;
@@ -107,16 +126,16 @@
                 font-size: calc(20 / 16 * 1rem);
             }
 
-            // @media (max-width: 767px) {
-            //     font-size: calc(26 / 16 * 1rem);
-            // }
         }
 
-        @media (max-width: 767px) {
+        @media ($mobile) {
             &-list{
                 position: absolute;
-                top: calc(-70 * 100vw / 768);
-                left: calc( 50vw - calc(136 * 100vw / 768) );
+                top: calc(-103 * 100vw / 375);
+                left: calc( 50vw - calc(136 * 100vw / 375) );
+                padding: calc(14 * 100vw / 375) calc(36 * 100vw / 375);
+                margin: 0;
+                font-size: calc(20 / 16 * 1rem);
             }
         }
 
@@ -130,6 +149,10 @@
                 font-size: calc(28 / 16 * 1rem);
                 line-height: calc(35 / 16 * 1rem);
             }
+
+            @media ($mobile) {
+                font-size: calc(30 / 16 * 1rem);
+            }
         }
 
         .footer-company:hover{
@@ -141,6 +164,12 @@
 .footer-logo {
     @media ($max) {
         width: calc(157 * 100vw / 768);
+    }
+
+    @media ($mobile) {
+        width: calc(162 * 100vw / 375);
+        display: inline-block;
+        margin-bottom: calc(77 * 100vw / 375);
     }
 
     & svg {
