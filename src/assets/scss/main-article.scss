@@ -154,14 +154,14 @@
     @media ($max) {
         .main-heading figure img{
             max-width: calc( 600 * 100vw / 768);
-            height: auto;
+            height: calc( 300 * 100vw / 768);
         }
     }
 
     @media ($mobile) {
         .main-heading figure img{
             width: calc( 335 * 100vw / 375);
-            height: calc( 180 * 100vw / 375);;
+            height: calc( 180 * 100vw / 375);
         }
     }
 
