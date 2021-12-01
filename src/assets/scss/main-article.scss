@@ -151,15 +151,21 @@
         z-index: 20;
     }
 
+    .main-heading .map-wrapper{
+        width: 800px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
     @media ($max) {
-        .main-heading figure img{
-            max-width: calc( 600 * 100vw / 768);
+        .main-heading .map-wrapper{
+            width: calc( 600 * 100vw / 768);
             height: calc( 300 * 100vw / 768);
         }
     }
 
     @media ($mobile) {
-        .main-heading figure img{
+        .main-heading .map-wrapper{
             width: calc( 335 * 100vw / 375);
             height: calc( 180 * 100vw / 375);
         }
